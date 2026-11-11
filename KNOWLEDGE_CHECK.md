@@ -12,7 +12,7 @@ Redirect the command's output to `results/job-history.txt` and include the file 
 
 **Your answer:** Provide the entire command you used, including all CLI options.
 
-...
+`mkdir -p results && sacct --starttime 2026-11-04 --user="$USER" -X --format=JobID,JobName,NodeList,Partition,Account,User,State,Start,Elapsed > results/job-history.txt`
 
 ## 2. Slurm: did every array task run at the same time?
 
